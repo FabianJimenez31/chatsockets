@@ -13,17 +13,28 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container-fluid">
             
-    <h1>Python Socketio</h1>
-    <div class="alert alert-primary" role="alert">
-            <ul id="message"></ul>
+    <h1>Python Socketio-chat</h1>
+    
+    <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >Escribe tu mensaje</span>
+            </div>
+            <input type="text" id="myMessage" class="form-control">
           </div>
-  
-    <input type="text" id="myMessage">
-    <button type="button" id="send">Enviar</button>
-            
+    
+        <br>
+        <br>
+    <button class="btn btn-primary btn-lg btn-block" type="button" id="send">Enviar</button>
     </div>
+    <br>
+    <div class="alert alert-info" role="alert">
+        Su mensaje aparecerá aqui:
+            <ul id="message"> </ul>
+    </div>
+    
+
  
 
    
